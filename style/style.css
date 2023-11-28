@@ -8,10 +8,13 @@
     --font: 'Bai Jamjuree', sans-serif;
 }
 
+/* Configurações gerais */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 body {
@@ -23,6 +26,20 @@ body {
     background-size: cover;
 }
 
+h3 {
+    color:var(--Dark-Grayish-Blue);
+    text-align: center;
+}
+
+p {
+    color: var(--Grayish-Blue);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Confi content */
 #content {
     width: 100%;
     max-width: 730px;
@@ -40,14 +57,140 @@ body {
 
 .history {
     font-size: 2em;
-    color:var(--Dark-Grayish-Blue);
 }
 
 .content-text {
     font-size: .9em;
     width: 532px;
     margin: 10px auto 25px auto;
+}
+
+.track {
+    margin-top: 100px;
+    font-size: 1.5rem;
+}
+
+.clipboard {
+    width: 510px;
+    font-size: .8rem;
+    margin: 10px auto 80px auto;
+    text-align: center;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+}
+
+.computer-img {
+    display: inline;
+    background: url(../images/image-computer.png) no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 450px;
+}
+
+.text-description {
+    display: inline;
+    width: 280px;
+    margin: 0px auto;
+    text-align: left;
+}
+
+.title-description {
+    margin-bottom: 50px;
+}
+
+.title-description h4{
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 10px;
+}
+
+.title-description p{
+    font-size: .8rem;
+    line-height: 23px;
+}
+
+.access {
+    display: block;
+    margin-top: 75px;
+}
+
+.access-clipboard {
+    font-size: 1.5em;
+}
+
+.text-access {
+    width: 480px;
+    font-size: .8em;
+    text-align: center;
+    margin: 10px auto 70px auto;
+}
+
+.img-devices {
+    background: url(../images/image-devices.png) no-repeat center center;
+    background-size: contain;
+    margin: auto;
+    width: 50%;
+    height: 400px;
+}
+
+.title-supercharge {
+    font-size: 1.5em;
+}
+
+.productivity {
+    text-align: center;
+    font-size: .8em;
+    margin-top: 10px;
+}
+
+.descripte-supercharge {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 65px auto 60px auto;
+}
+
+.text-supercharge {
+    width: 280px;
+    text-align: center;
+}
+
+.text-supercharge p {
+    font-size: .8em;
     color: var(--Grayish-Blue);
+    margin-top: 15px;
+    line-height: 20px;
+}
+
+.icon {
+    margin-bottom: 35px;
+}
+
+.list-supercharge ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 100px auto;
+}
+
+.cliboard {
+    margin: auto;
+    text-align: center;
+}
+
+.cliboard h3 {
+    font-size: 1.5em;
+}
+
+.cliboard p {
+    font-size: .8em;
+    width: 500px;
+    margin: 10px auto 40px auto;
 }
 
 /* Button */
@@ -77,4 +220,28 @@ body {
 
 .mac:hover {
     background: hsl(233, 57%, 56%);
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    background: rgba(246, 248, 248, 0.822);
+}
+
+.footer .img {
+    margin-left: 160px;
+}
+
+
+@media screen and (min-width: 1150px) {
+    .description {
+        margin: auto;
+    }
+
+    .descripte-supercharge {
+        width: 1100px;
+    }
 }
