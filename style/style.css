@@ -92,20 +92,55 @@ a {
   text-align: center;
 }
 
-.computer-img {
+.computer-img img{
   display: block;
-  width: 100%;
+  width: 400px;
   height: 250px;
-  background: url(../images/image-computer.png) no-repeat center center;
-  background-size: contain;
+  margin: auto;
+  /* background: url(../images/image-computer.png) no-repeat center center;
+  background-size: contain; */
   margin-bottom: 40px;
+}
+
+.text-description {
+  margin: 0 auto 100px auto;
 }
 
 .title-description {
   display: block;
   width: 100%;
-  margin: auto;
   text-align: center;
+  margin-bottom: 25px;
+}
+
+.title-description h3 {
+  font-size: 1.3em;
+  margin-bottom: 13px;
+}
+
+.title-description p {
+  font-size: .9em;
+  width: 271px;
+  margin: auto;
+}
+
+.access-clipboard {
+  font-size: 1.5em;
+  width: 250px;
+  margin: auto;
+}
+
+.text-access {
+  text-align: center;
+  width: 312px;
+  margin: 12px auto 40px auto;
+}
+
+.img-devices img{
+  display: block;
+  width: 420px ;
+  height:220px;
+  margin: auto;
 }
 
 /* Button */
