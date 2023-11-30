@@ -143,6 +143,25 @@ a {
   margin: auto;
 }
 
+.supercharge {
+  display: block;
+  text-align: center;
+}
+
+.title-supercharge {
+  width: 250px;
+  font-size: 1.5em;
+  margin: 70px auto 15px auto;
+}
+
+.productivity {
+  display: block;
+  text-align: center;
+  font-size: .9em;
+  width: 219px;
+  margin: 0 auto 70px auto;
+}
+
 /* Button */
 
 .bnt {
