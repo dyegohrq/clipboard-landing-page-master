@@ -22,8 +22,15 @@ body {
   font-size: 16px;
   width: 100%;
   height: 100%;
-  background: #fff url(../images/bg-header-mobile.png) no-repeat top center;
+  background: url(../images/bg-header-mobile.png) no-repeat top center;
   background-size: cover;
+}
+
+.main-content {
+  min-width: 375px;
+  max-width: 800px;
+  height: 100%;
+  margin: auto;
 }
 
 h3 {
@@ -48,8 +55,6 @@ a {
 
 #content {
   width: 100%;
-  min-width: 375px;
-  max-width: 800px;
   text-align: center;
   margin: 0 auto;
 }
@@ -280,260 +285,159 @@ a {
   background: hsl(233, 57%, 56%);
 }
 
-/* 
+@media screen and (min-width: 945px) {
 
-#content {
-  width: 100%;
-  max-width: 730px;
-  min-width: 375px;
-  height: 100%;
-  text-align: center;
-  margin: 0px auto;
-}
+  body {
+    background: url(../images/bg-header-desktop.png) no-repeat;
+    background-size: cover;
+  }
 
-.img img {
-  width: 60px;
-  height: 60px;
-  margin: 90px 0px 25px 0px;
-}
+  .main-content {
+    width: 100%;
+    min-width: 800px;
+    max-width: 1000px;
+  }
 
-.history {
-  font-size: 2em;
-}
+  .history {
+    width: 100%;
+    font-size: 2.1em;
+  }
 
-.content-text {
-  font-size: 0.9em;
-  width: 532px;
-  margin: 10px auto 25px auto;
-}
+  .content-text {
+    width: 505px;
+  }
 
-#main {
-  margin-bottom: 100px;
-}
+  .bnt {
+    display: inline;
+    width: 210px;
+    padding: 12px 0px;
+    margin-right: 10px;
+  }
 
-.track {
-  margin-top: 100px;
-  font-size: 1.5rem;
-}
+  .track {
+    width: 400px;
+    font-size: 1.9em;
+  }
 
-.clipboard {
-  width: 510px;
-  font-size: 0.8rem;
-  margin: 10px auto 80px auto;
-  text-align: center;
-}
+  .clipboard {
+    width: 580px;
+  }
 
-.description {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1120px;
-}
 
-.computer-img {
-  display: inline;
-  background: url(../images/image-computer.png) no-repeat;
-  background-size: contain;
-  width: 50%;
-  height: 450px;
-}
-
-.text-description {
-  display: inline;
-  width: 280px;
-  margin: 0px auto;
-  text-align: left;
-}
-
-.title-description {
-  margin-bottom: 50px;
-}
-
-.title-description h4 {
-  color: var(--Dark-Grayish-Blue);
-  margin-bottom: 10px;
-}
-
-.title-description p {
-  font-size: 0.8rem;
-  line-height: 23px;
-}
-
-.access {
-  display: block;
-  margin-top: 75px;
-}
-
-.access-clipboard {
-  font-size: 1.5em;
-}
-
-.text-access {
-  width: 480px;
-  font-size: 0.8em;
-  text-align: center;
-  margin: 10px auto 70px auto;
-}
-
-.img-devices {
-  background: url(../images/image-devices.png) no-repeat center center;
-  background-size: contain;
-  margin: auto;
-  width: 50%;
-  height: 400px;
-}
-
-.title-supercharge {
-  font-size: 1.5em;
-}
-
-.productivity {
-  text-align: center;
-  font-size: 0.8em;
-  margin-top: 10px;
-}
-
-.descripte-supercharge {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 65px auto 60px auto;
-}
-
-.text-supercharge {
-  width: 280px;
-  text-align: center;
-}
-
-.text-supercharge p {
-  font-size: 0.8em;
-  color: var(--Grayish-Blue);
-  margin-top: 15px;
-  line-height: 20px;
-}
-
-.icon {
-  margin-bottom: 35px;
-}
-
-.list-supercharge ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1140px;
-  margin: 100px auto;
-}
-
-.cliboard {
-  margin: auto;
-  text-align: center;
-}
-
-.cliboard h3 {
-  font-size: 1.5em;
-}
-
-.cliboard p {
-  font-size: 0.8em;
-  width: 500px;
-  margin: 10px auto 40px auto;
-}
-
- Button 
-.bnt {
-  padding: 11px 30px;
-  border-radius: 100px;
-  border: none;
-  color: #fff;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.199);
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: all 1s ease;
-}
-
-.ios {
-  background: var(--Strong-Cyan);
-  margin-right: 25px;
-}
-
-.ios:hover {
-  background: hsl(171, 69%, 34%);
-}
-
-.mac {
-  background: var(--Light-Blue);
-}
-
-.mac:hover {
-  background: hsl(233, 57%, 56%);
-}
-
-Footer
-
-.footer {
-  display: flex;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  background: rgba(206, 209, 211, 0.425);
-  justify-content: space-around;
-}
-
-.footer img {
-  width: 55px;
-  height: 55px;
-  display: flex;
-  position: relative;
-  top: 50%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-}
-
-.list-footer {
-  display: block;
-  margin: auto;
-  columns: 3;
-}
-
-.list-footer li {
-  margin: 0px 95px 10px 0px;
-}
-
-.list-footer a {
-  color: var(--Grayish-Blue);
-  font-size: .9em;
-  font-weight: 600;
-  transition: color 1s ease;
-}
-
-.list-footer a:hover {
-  color: var(--Strong-Cyan);
-}
-
-.social-media ul {
-  display: flex;
-  position: relative;
-  top: 50%;
-  right: 10%;
-  transform: translate(-50%, -50%);
-}
-
-.social-media ul li {
-  margin-right: 30px;
-}
-
-.social-media a img{
-  width: 23px;
-  height: 23px;
-}
-
-@media screen and (min-width: 1150px) {
   .description {
+    display: flex;
+  }
+
+  .computer-img img {
+    width: 500px;
+    height: 351px;
+  }
+
+  .text-description {
+    margin-bottom: 100px ;
+  }
+  
+  .title-description h3, .title-description p {
+    width: 100%;
+    text-align: left;
+  }
+
+  .title-description p {
+    font-size: .9em;
+    width: 313px;
     margin: auto;
   }
 
-  .descripte-supercharge {
-    width: 1100px;
+  .access-clipboard {
+    width: 401px;
+    font-size: 1.9em
   }
-} */
+
+  .text-access {
+    width: 620px;
+  }
+
+  .img-devices img {
+    width: 721px;
+    height: 344px;
+  }
+
+  .title-supercharge{
+    width: 400px;
+    font-size: 1.9em;
+  }
+
+  .productivity {
+    width: 317px;
+    font-size: .9em;
+  }
+
+  .descripte-supercharge {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .text-supercharge h3 {
+    font-size: 1.2em;
+  }
+
+  .text-supercharge p {
+    font-size: .8em;
+    width: 275px;
+    margin: auto;
+  }
+
+  .list-supercharge ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .list-supercharge ul li{
+    margin-right: 52px;
+  }
+
+  .contain-cliboard {
+    width: 100%;
+  }
+
+  .contain-cliboard h3{
+    font-size: 1.9em;
+    width: 425px;
+  }
+
+  .contain-cliboard p{
+    width: 630px;
+    margin: 0px auto 38px auto;
+  }
+
+  .footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    padding: 0;
+  }
+
+  .footer  img {
+    margin-left: 140px;
+  }
+
+  .list-footer ul{
+    columns: 3;
+    text-align: left;
+    margin: auto;
+    width: 700px;
+    flex-wrap: wrap;
+  }
+
+  .social-media{
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+  }
+
+  .social-media img {
+    margin: 0 30px 0 auto;
+  }
+}
